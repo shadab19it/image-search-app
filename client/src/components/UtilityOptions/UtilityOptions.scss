@@ -1,0 +1,47 @@
+.utility-options {
+  background-color: #0e1a2c;
+  min-height: 30px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 15px;
+  box-shadow: inset 2px 3px 5px #0a121f, 0px 1px 1px #333;
+  .action-icons {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 0 15px;
+    align-items: center;
+    li {
+      cursor: pointer;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      border-radius: 4px;
+      align-items: center;
+      &:hover {
+        background-color: #050a12;
+        .download-svg-icon,
+        .refresh-svg-icon,
+        .share-svg-icon,
+        .select-svg-icon {
+          path,
+          line {
+            stroke: #5465ff;
+          }
+        }
+      }
+
+      img {
+        width: 25px;
+        object-fit: contain;
+      }
+    }
+  }
+  .cout-selected-img {
+    margin-top: 5px;
+    color: #fff;
+  }
+}

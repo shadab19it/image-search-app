@@ -1,0 +1,46 @@
+.login_page_wrapper {
+  background-color: var(--primary-bg-cl);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+
+  .content {
+    min-width: 350px;
+  }
+  .app_icon {
+    width: 240px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .page_title {
+    margin-top: 8rem;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--ft-dl-cl);
+    font-weight: 400;
+  }
+  .input_field {
+    display: flex;
+    flex-direction: column;
+    .input_label {
+      color: #d8d7d7;
+      font-size: 20px;
+      margin: 20px 0 20px 0;
+    }
+  }
+  .submit_btn {
+    width: 100%;
+    margin-top: 20px !important;
+  }
+  .admin_checkbox {
+    margin-top: 15px;
+    label {
+      color: #fff !important;
+    }
+  }
+}
