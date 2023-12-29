@@ -24,19 +24,29 @@ Make sure you have the following installed on your machine:
 
 ### Backend (Python)
 
-1. Navigate to the `server` directory:
+1. Add `.env` file with this variables in root dir
+
+   ```bash
+   JWT_SECRET=your_jwt_secret_key
+   DATABASE_URL=your_database_url
+   TWILIO_ACCOUNT_SID=your_twilio_account_sid
+   TWILIO_AUTH_TOKEN=your_twilio_auth_token
+   TWILIO_PHONE_NUMBER=your_twilio_phone_number
+   ```
+
+2. Navigate to the `server` directory:
 
    ```bash
    cd server
    ```
 
-2. Install the required Python packages:
+3. Install the required Python packages:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Run the backend server:
+4. Run the backend server:
 
    ```bash
    uvicorn server:app --reload
